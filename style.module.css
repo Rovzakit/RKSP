@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+    min-width: 490px;
+}
+.allBlocks {
+    
+    height: 100%;
+}
+.sidePanel {
+    
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.bookCollection {
+    float: left;
+    height: 100%;
+    width: calc(100% - 200px);
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow-y: scroll;
+    min-height: 430px;
+}
+.operationBlock {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    padding-bottom: 5px;
+    height: 300px;
+    background-color: darkgray;
+}
+.history {
+    background-color: lightgray;
+    border-right: 1px solid black;
+    height: calc(100% - 300px - 30px);
+    min-height: 100px;
+    overflow-y: scroll;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.bookName {
+    width: 178px;
+    margin: 0px;
+    border-width: 0px;
+}
+.bookName:focus {
+    outline: none;
+}
+.bookCost {
+    width: 178px;
+    margin: 0px;
+    border-width: 0px;
+    margin-top: 5px;
+}
+.bookCost:focus {
+    outline: none;
+}
+.bookQuantity {
+    width: 178px;
+    margin: 0px;
+    border-width: 0px;
+    margin-top: 5px;
+}
+.bookQuantity:focus {
+    outline: none;
+}
+/*
+input:focus::placeholder {
+    color: transparent;
+}*/
+.search {
+    border: none;
+    outline: none;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search:hover {
+    background-color: #ddd;
+}
+.search:active {
+    background-color: #666;
+    color: white;
+}
+.add {
+    border: none;
+    outline: none;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add:hover {
+    background-color: #ddd;
+}
+.add:active {
+    background-color: #666;
+    color: white;
+}
+.remove {
+    border: none;
+    outline: none;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove:hover {
+    background-color: #ddd;
+}
+.remove:active {
+    background-color: #666;
+    color: white;
+}
+.buttons {
+    text-align: center;
+}
+.labelInfo {
+    background-color: transparent;
+    margin-top: 5px;
+    padding: 10px;
+    padding-right: 0px;
+    height: 188px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    color: rgb(0, 78, 126);
+}
+.historyLabel {
+    background-color:beige;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+div.hLabels {
+    width: 100%;
+    background-color: rgb(131, 131, 131);
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+    background: #999; 
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+div.bLabels {
+    width: 100%;
+    background-color: rgb(195, 195, 195);
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
